@@ -1,0 +1,25 @@
+Name:                hips
+Version:             0.1
+Synopsis:            an IPS patcher
+Description:         a program that patches files with patches of the IPS format
+Homepage:            http://closure.ath.cx/hips
+License:             BSD3
+License-file:        LICENSE
+Author:              Patrick Palka
+Maintainer:          patrick@parcs.ath.cx
+-- Copyright:           
+Category:            Data
+Build-type:          Simple
+Cabal-version:       >=1.6
+
+Executable hips
+  Main-is:             Hips.hs
+  Build-depends:       base       < 5
+                     , bytestring
+                     , mtl
+                     , functors
+                     , directory
+
+source-repository head
+  type:     git
+  location: git://git.lambda.ath.cx/patrick/hips
